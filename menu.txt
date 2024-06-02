@@ -1,0 +1,32 @@
+mov r0, #2
+mov r1, #1
+mov r2, #2
+mov r3, #3
+mov r4, #4
+bucle 	CMP r0,r1
+		beq op1
+		CMP r0,r2
+		beq op2
+		cmp r0,r3
+		beq op3
+		cmp r0,r4
+		beq op4
+		bne exit
+op1 
+;auto fantasma
+
+b bucle
+
+op2
+;choque
+b bucle
+
+op3 
+;ping pong
+b bucle
+
+op4 
+;morse
+b bucle
+
+exit
