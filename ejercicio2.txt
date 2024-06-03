@@ -1,0 +1,10 @@
+EJERCICIO 2 (hacer a-- en assembly)
+		mov r0, #0
+		cmp		r0, #0
+		beq		exit
+		bne		bucle
+bucle		sub		r0, r0, #1
+		cmp		r0, #0
+		beq		exit
+		bne		bucle
+exit
